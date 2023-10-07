@@ -1,0 +1,87 @@
+/* 对所有的 ul 和 li 元素进行样式设置 */  
+ul, li {  
+    list-style: none; /* 移除列表前的项目符号 */  
+    margin: 1; /* 设置外边距为0 */  
+    padding: 0; /* 设置内边距为0 */  
+}  
+  
+/* 为 class 为 "sd" 的元素设置样式 */  
+.sd {  
+    float : right; /* 元素左浮动 */  
+    width: 330px; /* 设置宽度为320像素 */  
+    margin: 50px 70px 0px 55px; /* 设置上边距为100像素，右边距为80像素，下边距为0 */  
+}  
+  
+/* 为 class 为 "sdspan" 的元素设置样式 */  
+.sdspan {  
+    float: left; /* 元素左浮动 */  
+    display: inline-block; /* 以行内块级元素显示 */  
+    margin: 0; /* 设置外边距为0 */  
+    border-width: 2px;
+	border-color:red;
+	border-style:solid;/*/* 设置红色虚线边框，宽度为2像素 */  
+    height: 26px; /* 设置高度为26像素 */  
+    width: 26px; /* 设置宽度为26像素 */  
+    line-height: 26px; /* 设置行高与字体大小相同，使行内元素垂直居中 */  
+    text-align: center; /* 设置文本居中 */  
+    box-sizing: border-box; /* 包含边框在内的宽度和高度 */  
+}  
+  
+/* 为 class 为 "sdli" 的元素设置样式 */  
+.sdli {  
+    width: 100%; /* 设置宽度为100% */  
+    height: 26px; /* 设置高度为26像素 */  
+    float: left; /* 元素左浮动 */  
+}  
+  
+/* 为具有 class "bl" 的元素的左边设置黑色边框样式 */  
+.bl {  
+    border-left-color: black; /* 设置左边边框颜色为黑色 */  
+    border-left-style: solid; /* 设置左边边框样式为实线 */  
+}  
+  
+/* 为具有 class "bt" 的元素的上边设置黑色边框样式 */  
+.bt {  
+    border-top-color: black; /* 设置上边边框颜色为黑色 */  
+    border-top-style: solid; /* 设置上边边框样式为实线 */  
+}  
+  
+/* 为具有 class "br" 的元素的右边设置黑色边框样式，并设置右边边框宽度为2像素 */  
+.br {  
+    border-right-color: black; /* 设置右边边框颜色为黑色 */  
+    border-right-width: 2px; /* 设置右边边框宽度为2像素 */  
+    border-right-style: solid; /* 设置右边边框样式为实线 */  
+}  
+  
+/* 为具有 class "bb" 的元素的下边设置黑色边框样式，并设置下边边框宽度为2像素 */  
+.bb {  
+    border-bottom-color: black; /* 设置下边边框颜色为黑色 */  
+    border-bottom-width: 2px; /* 设置下边边框宽度为2像素 */  
+    border-bottom-style: solid; /* 设置下边边框样式为实线 */  
+}  
+  
+/* 对于文字颜色为红色且字体加粗的空白单元格，设置样式 */  
+.blankCell {  
+    color:red; /* 设置文字颜色为红色 */  
+    font-weight: 600; /* 加粗字体 */  
+}  
+  
+/* 对于背景色为白色的元素，设置样式 */  
+.bg_red {  
+    background: white; /* 设置背景色为白色 */  
+}  
+  
+/* 对于含有 class "clearfix" 的元素，在内容后添加一个清除浮动的标记，用于解决浮动带来的问题 */  
+.clearfix:after {  
+    content: ''; /* 插入内容，一般为空字符串或伪元素标识符 "::after" */  
+    display: table; /* 将内容作为表格来显示，使得后面的清除浮动代码能够以表格的方式插入到父元素的最后面 */  
+    clear: both; /* 清除左右两边浮动的影响，使得父元素能够完全包含浮动元素 */  
+}  
+  
+/* 对于 class 为 "btn-group" 的元素设置样式，使其上边距为20像素，文本居中显示 */  
+.btn-group {  
+    margin-top:20px; /* 设置上边距为20像素 */  
+    text-align:center; /* 设置文本居中显示 */  
+}  
+  
+/* 对整个 HTML
